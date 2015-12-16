@@ -4,3 +4,38 @@ div.button{
  	height:60px; 
 	background-color: red;
 }
+
+div.head {
+	background-color: yellow;
+}
+
+div.middle {
+	background-color: green;
+	height: 600px; 
+}
+
+div.status {
+	background-color: blue;
+}
+
+div.resource {
+	float: left;
+	width: 25%; 
+	height: 100%; 
+	background-color: red;
+}
+
+div.action {
+	float: left;
+	width: 50%; 
+	height: 100%; 
+	background-color: purple;
+}
+
+div.log {
+	float: right;
+	width: 25%; 
+	height: 100%; 
+	background-color: Gray;
+}
+
