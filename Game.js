@@ -18,10 +18,9 @@ var Game = {
 
 var uGameFramework = {};
 
+uGameFramework.botton = {};
 
-var botton = {};
-
-botton.init = function(options)
+uGameFramework.botton.init = function(options)
 {
 	var defaultValues = {
         url : false,
