@@ -1,9 +1,4 @@
-div.button{ 
-	position:relative; 
-	width:500px; 
- 	height:60px; 
-	background-color: red;
-}
+
 
 div.head {
 	background-color: yellow;
@@ -39,3 +34,54 @@ div.log {
 	background-color: Gray;
 }
 
+div.button {
+	position: relative;
+	width: 200px;
+	height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+	color: #fff;
+	text-shadow: -2px 2px #346392;
+	background-color: #ff9664;
+	background-image: linear-gradient(top, #6496c8, #346392);
+	box-shadow: inset 0 0 0 1px #27496d;
+	border: none;
+	border-radius: 15px;
+}
+
+div.button:hover,
+div.button.hover {
+  box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+div.button:active,
+div.button.active {
+  box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+div.button_press {
+	position: relative;
+	width: 200px;
+	height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+	color: #fff;
+	background-color: #6496c8;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 2px 5px #27496d;
+}
+
+div.button_press:hover,
+div.button_press.hover {
+  background-color: #417cb8
+}
+
+div.button_press:active,
+div.button_press.active {
+  background-color: #417cb8;
+  box-shadow: 0 0px #27496d;
+  transform: translateY(5px);
+}
