@@ -5,7 +5,7 @@ div.head {
 }
 
 div.middle {
-	background-color: green;
+	background-color: white;
 	height: 600px; 
 }
 
@@ -24,7 +24,6 @@ div.action {
 	float: left;
 	width: 50%; 
 	height: 100%; 
-	background-color: purple;
 }
 
 div.log {
@@ -36,12 +35,13 @@ div.log {
 
 div.button_press {
 	position: relative;
-	left: 20px;
-	top: 20px;
+	float: left;
+
+	margin: 10px;
 	width:150px; 
- 	height:60px;
+ 	height:50px;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
 
     color: #ffffff;
     text-shadow: -2px 2px #346392;
@@ -62,4 +62,48 @@ div.button_press.active {
 	background-color: #417cb8;
 	box-shadow: 0 0px #27496d;
 	transform: translateY(5px);
+}
+
+
+
+
+.tablist { 
+	list-style:none;  
+	height:2em; padding:0;  
+	margin:0;  
+	border: none; 
+}
+.tablist li { 
+	float:left;  
+	margin-right:0.13em;  
+}
+.tablist li a { 
+	display:block; 
+	padding:0 1em; 
+	text-decoration:none; 
+	border:0.06em solid #000; 
+	border-bottom:0; 
+	font:bold 0.88em/2em arial,geneva,helvetica,sans-serif; 
+	color:#000; 
+	background-color:#ccc;  
+
+	/* CSS 3 elements */ 
+	webkit-border-top-right-radius:0.50em; 
+	-webkit-border-top-left-radius:0.50em; 
+	-moz-border-radius-topright:0.50em; 
+	-moz-border-radius-topleft:0.50em; 
+	border-top-right-radius:0.50em; 
+	border-top-left-radius:0.50em; 
+}
+.tablist li a:hover { 
+	background:#22aadd;  
+	color:#fff; 
+	text-decoration:none; 
+}
+.tablist li#current a { 
+	background-color: #33ccff; 
+	color: #fff;
+} 
+.tablist li#current a:hover { 
+	background: #33ccff; 
 }
