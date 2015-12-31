@@ -6,13 +6,70 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="Game.js"></script>
 		<script>
+			$(function() {
+				msg();
+				$("li#base").click();
+			});
+
 			function msg() {
-			    //alert("Hello world!");
 			    //uGameFramework.botton.init({url: true, width: 32});
 
-			    $("#current").hide(1000);
+			    //$("li:not(.active)").hide(0);
+			    $("li#base").click(function(event) {
+			    	$("li").removeClass('active');
+			    	$("li#base").addClass('active');
 
-			    //alert("by world!");
+			    	$("div#tab_member").hide(0);
+			    	$("div#tab_tech").hide(0);
+			    	$("div#tab_make").hide(0);
+			    	$("div#tab_army").hide(0);
+
+			    	$("div#tab_base").show(0);
+			    })
+			    $("li#member").click(function(event) {
+			    	$("li").removeClass('active');
+			    	$("li#member").addClass('active');
+
+			    	$("div#tab_base").hide(0);
+			    	$("div#tab_tech").hide(0);
+			    	$("div#tab_make").hide(0);
+			    	$("div#tab_army").hide(0);
+
+			    	$("div#tab_member").show(0);
+			    })
+			    $("li#tech").click(function(event) {
+			    	$("li").removeClass('active');
+			    	$("li#tech").addClass('active');
+
+			    	$("div#tab_base").hide(0);
+			    	$("div#tab_member").hide(0);
+			    	$("div#tab_make").hide(0);
+			    	$("div#tab_army").hide(0);
+
+			    	$("div#tab_tech").show(0);
+			    });
+			    $("li#make").click(function(event) {
+			    	$("li").removeClass('active');
+			    	$("li#make").addClass('active');
+
+			    	$("div#tab_base").hide(0);
+			    	$("div#tab_member").hide(0);
+			    	$("div#tab_tech").hide(0);
+			    	$("div#tab_army").hide(0);
+
+			    	$("div#tab_make").show(0);
+			    });
+				$("li#army").click(function(event) {
+					$("li").removeClass('active');
+			    	$("li#army").addClass('active');
+
+			    	$("div#tab_base").hide(0);
+			    	$("div#tab_member").hide(0);
+			    	$("div#tab_make").hide(0);
+			    	$("div#tab_tech").hide(0);
+
+			    	$("div#tab_army").show(0);
+			    });
 			}
 		</script>
 	</head>
@@ -22,14 +79,32 @@
 			<div class="resource">Left</div>
 			<div class="action">
 				<ul class="tablist">
-					<li id="current"><a href="#">洞穴</a></li>
-					<li><a href="#">人員</a></li>
-					<li><a href="#">科技</a></li>
-					<li><a href="#">製造</a></li>
-					<li><a href="#">軍事</a></li>
+					<li class="active" id="base"><a href="#">洞穴</a></li>
+					<li id="member"><a href="#">人員</a></li>
+					<li id="tech"><a href="#">科技</a></li>
+					<li id="make"><a href="#">製造</a></li>
+					<li id="army"><a href="#">軍事</a></li>
 				</ul>
-				<div class="button_press">收集果實</div>
-				<div class="button_press">收集枝葉</div>
+				<div id="tab_base">
+					<div class="button_press">收集果實</div>
+					<div class="button_press">收集枝葉</div>
+				</div>
+				<div id="tab_member">
+					<div class="button_press">收集果實2</div>
+					<div class="button_press">收集枝葉2</div>
+				</div>
+				<div id="tab_tech">
+					<div class="button_press">收集果實3</div>
+					<div class="button_press">收集枝葉3</div>
+				</div>
+				<div id="tab_make">
+					<div class="button_press">收集果實4</div>
+					<div class="button_press">收集枝葉4</div>
+				</div>
+				<div id="tab_army">
+					<div class="button_press">收集果實5</div>
+					<div class="button_press">收集枝葉5</div>
+				</div>
 			</div>
 			<div class="log">Right</div>
 		</div>

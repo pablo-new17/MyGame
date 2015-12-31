@@ -100,10 +100,10 @@ div.button_press.active {
 	color:#fff; 
 	text-decoration:none; 
 }
-.tablist li#current a { 
+.tablist li.active a { 
 	background-color: #33ccff; 
 	color: #fff;
 } 
-.tablist li#current a:hover { 
+.tablist li.active a:hover { 
 	background: #33ccff; 
 }
