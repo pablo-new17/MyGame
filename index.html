@@ -6,14 +6,14 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="Game.js"></script>
 		<script>
-			$(function() {
+			/*$(function() {
 				msg();
 				$("li#base").click();
-			});
+			});*/
 
 			function msg() {
 			    //uGameFramework.botton.init({url: true, width: 32});
-
+/*
 			    //$("li:not(.active)").hide(0);
 			    $("li#base").click(function(event) {
 			    	$("li").removeClass('active');
@@ -70,6 +70,7 @@
 
 			    	$("div#tab_army").show(0);
 			    });
+*/
 			}
 		</script>
 	</head>
@@ -79,29 +80,29 @@
 			<div class="resource">Left</div>
 			<div class="action">
 				<ul class="tablist">
-					<li class="active" id="base"><a href="#">洞穴</a></li>
+					<li id="base"><a href="#">洞穴</a></li>
 					<li id="member"><a href="#">人員</a></li>
 					<li id="tech"><a href="#">科技</a></li>
 					<li id="make"><a href="#">製造</a></li>
 					<li id="army"><a href="#">軍事</a></li>
 				</ul>
-				<div id="tab_base">
+				<div class="tabcontain" id="tab_base">
 					<div class="button_press">收集果實</div>
 					<div class="button_press">收集枝葉</div>
 				</div>
-				<div id="tab_member">
+				<div class="tabcontain" id="tab_member">
 					<div class="button_press">收集果實2</div>
 					<div class="button_press">收集枝葉2</div>
 				</div>
-				<div id="tab_tech">
+				<div class="tabcontain" id="tab_tech">
 					<div class="button_press">收集果實3</div>
 					<div class="button_press">收集枝葉3</div>
 				</div>
-				<div id="tab_make">
+				<div class="tabcontain" id="tab_make">
 					<div class="button_press">收集果實4</div>
 					<div class="button_press">收集枝葉4</div>
 				</div>
-				<div id="tab_army">
+				<div class="tabcontain" id="tab_army">
 					<div class="button_press">收集果實5</div>
 					<div class="button_press">收集枝葉5</div>
 				</div>

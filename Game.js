@@ -18,6 +18,8 @@ var Game = {
 
 var uGameFramework = {};
 
+uGameFramework.menu = {};
+uGameFramework.tab = {};
 uGameFramework.botton = {};
 
 uGameFramework.botton.init = function(options)
@@ -38,3 +40,22 @@ uGameFramework.botton.init = function(options)
     alert("rate = "+ this.rate);
 
 }
+
+uGameFramework.tab.init = function(options)
+{
+    var defaultValues = {
+        tab_object : $("ul.tablist"),
+    }
+    $.extend(this, defaultValues, options);
+
+    this.tab_object.children().removeClass('active');
+    this.tab_object.children().filter("#base").addClass('active');
+
+    this.tab_object.parent().children().filter("div.tabcontain").hide(0);
+    this.tab_object.parent().children().filter("div#tab_base").show(0);
+}
+
+
+$(function() {  //Start Javascript (1st executed function after page load)
+    uGameFramework.tab.init({tab_object: $("ul.tablist")});
+});
